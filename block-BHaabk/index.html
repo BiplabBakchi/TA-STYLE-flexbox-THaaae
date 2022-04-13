@@ -7,9 +7,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="top">
     <header class="header">
-        <div class="header-container container">
+        <div class="flex container">
             <a href="#">
                 <img class="header-img" src="media/logo.png" alt="logo">
             </a>
@@ -22,20 +22,19 @@
     </header>
     <main>
         <section>
-            <article>
-                <div class="article-container container">
-                    <div class="article-content">
+            <article class="article-section">
+                <div class="flex container">
+                    <div>
                         <h2>About header</h2>
                         <p class="paragraph">
                             Photography is the art, application, and practice of creating durable images by recording light, either electronically by means of an image sensor, or chemically by means of a light-sensitive material such as photographic film. It is employed in many fields of science, manufacturing (e.g., photolithography), and business, as well as its more direct uses for art, film and video production, recreational purposes, hobby, and mass communication.
                         </p>
                     </div>
-
-                    <img class="article-content" src="media/pic1.png" alt="image">
+                    <div><img src="media/pic1.png" alt=""></div>
                 </div>
             </article>
             <div class="container">
-                <div class="col">
+                <div class="col flex">
                     <div>
                         <img class="galler-img" src="media/pic2.png" alt="image">
                     </div>
@@ -48,9 +47,8 @@
                         <img class="galler-img" src="media/pic4.png" alt="image">
                     </div>
     
-                </div>
+                
     
-                <div class="col">
     
                     <div>
                         <img class="galler-img" src="media/pic5.png" alt="image">
@@ -73,10 +71,15 @@
     </main>
 
     <footer class="footer">
-        <a href="#">Facebook</a>
-        <a href="">Twitter</a>
-        <a href="">Instagram</a>
+        <nav>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+
+        </nav>
     </footer>
+    <a class="top-btn" href="#top">Top</a>
+    
     
 </body>
 </html>
