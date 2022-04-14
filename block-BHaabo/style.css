@@ -59,7 +59,7 @@ table {
 }
 
 .container {
-	max-width: 1200px;
+	max-width: 1350px;
 	margin: 0 auto;
 	padding: 0 32px;
 }
@@ -68,6 +68,14 @@ body {
 	font-size: 16px;
 	line-height: 1.7;
 }
+.flex {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.padding {
+	padding: 60px 32px;
+}
 
  
 
@@ -75,7 +83,8 @@ body {
 
 
 .header {
-	background-color: rgb(107, 103, 118);
+	background-color: #22396a;
+	padding: 25;
 
 }
 
@@ -83,24 +92,120 @@ body {
 .logo {
 	width: 150px;
 }
-.brand {
-	display: flex;
-	justify-content: flex-start;
-}
-.header-icon {
-	display: flex;
-	justify-content: flex-end;
-}
-
-
-
-/*Aside*/
-.aside a {
-	display: flex;
-	align-content: space-between;
+.nav a {
+	font-size: 24px;
+	color: white;
+	align-items: center;
+	margin-left: 15px;
+	text-decoration: none;
 }
 
 
+.nav img {
+	vertical-align: middle;
+	text-decoration: none;
+	margin-right: 20px;
+}
+.nav a span {
+	vertical-align: middle;
+	
+}
 
-/*Footer*/
+/*Aside*/ 
+.aside {
+	background-color: rgb(151, 151, 217);
+	padding: 32px;
+	flex: 0 1 30%;
+	align-self: stretch;
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	
 
+}
+.aside-nav {
+	display: flex;
+	flex-direction: column;
+}
+.aside-nav a {
+	font-size: 18px;
+	text-decoration: none;
+	text-transform: capitalize;
+	font-weight: 700;
+	padding: 15px;
+	border-radius: 5px;
+}
+.aside-nav a img {
+	vertical-align: middle;
+	margin-right: 13px;
+}
+
+.active {
+	color: orange;
+	border: 2px solid orange;
+}
+.button {
+	border: 0;
+	padding: 16px 32px;
+	background-color: white;
+	font-size: 20px;
+	width: 100%;
+	border-radius: 4px;
+	text-align: left;
+	font-weight: 700;
+	color: rgb(12, 12, 36);
+}
+
+.button img {
+	margin-right: 12px;
+	vertical-align: middle;
+}
+
+ /*Article*/
+
+
+ .article {
+	 flex: 0 1 65%;
+	 background-color: rgb(215, 224, 224);
+	 padding: 32px;
+ }
+ h2 {
+	 font-size: 30px;
+	 font-weight: 700;
+	 color: rgb(18, 18, 48);
+	 margin-bottom: 16px 0;
+ }
+ p {
+	 font-size: 18px;
+	 line-height: 1.7;
+	 color: rgb(18, 18, 48);
+	 margin-bottom: 12px;
+ }
+ .readmore {
+	 padding: 16px 36px;
+	 background-color: green;
+	 color: white;
+	 font-size: 20px;
+	 display: inline-block;
+	 text-decoration: none;
+	 border-radius: 8px;
+	 font-weight: 500;
+	 box-shadow: 0 4px 12px green;
+
+
+ }
+
+ /*Footer*/
+ .footer {
+	 background-color: #22396a;
+	 padding: 40px 0;
+	 color: white;
+
+ }
+.footer a {
+	font-size: 25px;
+	text-decoration: none;
+	margin-left: 32px;
+	color: white;
+}
